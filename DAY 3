@@ -1,0 +1,571 @@
+PROJECT 1 - IF ELSE
+Condition Check
+Learn to use conditionals in Python to check a conditions and tell the computer what to do in each case. e.g.
+
+if <this condition is true>:
+
+    <then execute this line of code>
+
+What if the condition is false?
+The else keyword is used to define a block of code that will execute if the condition checked in the if statement is false.
+
+if pigs can fly:
+
+    <Some code that will never execute>
+
+else:
+
+    print("This is real life")
+
+Python Indentation
+Understand the importance of indentation in Python as a way to make certain lines of code subsidaries of other lines of code.
+
+e.g.
+
+if 5 > 2: #This is a parent line of code
+
+    print("yes") #this is a child line of code
+
+Comparator Operators
+> Greater than
+< Less than
+>= Greater than or equal to
+<= Less than or equal to
+== Equal to
+!= Not equal to
+
+
+Code soultion -
+
+print("Welcome to the rollercoaster!")
+height = int(input("What is your height in cm? "))
+
+# symbol of comparison operators
+# > greater than
+# < smaller than
+# <= less than equal to
+# >= greater than equal to
+# == equal to
+# != not equal to
+
+#using single = means you are assigning value to the variable (its assignment)
+# using double == means you are checking that if value to the left is equal to the value in right
+
+if height >=120 :
+    print("you can ride the rollercoaster")
+else :
+    print("Sorry you have to grow taller before you can ride")
+
+
+
+
+
+Project 2 - Modulo
+
+print("Welcome to the rollercoaster!")
+height = int(input("What is your height in cm? "))
+
+# symbol of comparison operators
+# > greater than
+# < smaller than
+# <= less than equal to
+# >= greater than equal to
+# == equal to
+# != not equal to
+
+#using single = means you are assigning value to the variable (its assignment)
+# using double == means you are checking that if value to the left is equal to the value in right
+
+if height >=120 :
+    print("you can ride the rollercoaster")
+else :
+    print("Sorry you have to grow taller before you can ride")
+
+Code Solution- 
+#Modulo operator represented by %
+# It basically represents the remainder left in divisions
+
+#Example-below
+
+
+# see what I did I made it a string character thats wrong print("10 % 5")
+# correct way is below
+
+print (10 % 3)
+#Its 1
+Number = int(input("Enter the number here"))
+if Number % 2 == 1 :
+    print("odd")
+else :
+    print("even")
+# else wali condiiton k liye if statement ka False hona zaroori hai and vice versa
+# here = signin if/else use nahi karne diya because voh value assignment hogaya
+# if/else mai check karte hai toh == yeh vaala sign lagega
+# print is used like printer joh likha hai vahi dubaara likh dega solution pane mai
+# input function mai input daalne ko bolega and solution pane mai dikhayega to enter the value yahan print lagane ki
+# zaroorat nahi hai
+
+Project 3 - Nesting and Elif
+You can put if/else statements inside other if/else statements. This is known as nesting. e.g.
+
+if maths_score >= 90:
+    if english_score >= 90:
+        print("You're good at everything")
+    else:
+        print("You're good at maths")
+if english_score >= 90:
+    print("You're good at english)
+In this case only when a student has over 90 on maths and english, do they get "You are good at everything".
+
+Note: You can also have if statements that don't have a paired else statement.
+
+
+Code Solution-
+
+#playing with two variables
+
+maths_score = int(input("what is your maths score?"))
+english_score = int(input("what is your english score?"))
+
+if maths_score >= 90:
+    if english_score >= 90:
+        print("You're good at everything")
+    else:
+        print("You're good at maths")
+else:
+    print("You're good at english")
+
+##############################################################
+
+maths_score = int(input("what is your maths score?"))
+english_score = int(input("what is your english score?"))
+if maths_score >= 90:
+    if english_score >= 90:
+        print("You're good at everything")
+    else:
+        print("You're good at maths")
+if english_score >= 90:
+    print("You're good at english")
+
+################################################################
+
+print("Welcome to the rollercoaster!")
+height = int(input("What is your height in cm? "))
+age = int(input("what is your age?"))
+if height >= 120:
+    if age >= 18:
+       print("You can ride the rollercoaster")
+    else:
+       print("You are small to ride the rollercoaster")
+else:
+    print("Sorry you have to grow taller before you can ride.")
+
+#Frame your logic in if/else considering which statement has to be true and which statement has to be false
+
+# now playing with three variables
+# age <= 18 $7
+# age > 18 $12
+# Main condition height >= 120 cm
+print("welcome to the rollercoaster!")
+height = int(input("what is your height in cm?"))
+age = int(input("what is your age?"))
+if height >= 120:
+    print("You can ride the rollercoaster")
+    age = int(input("what is your age?"))
+    if age <= 18:
+        print("Please pay $7.")
+    else:
+        print("Please pay $12.")
+else:
+    print("Sorry you have to grow taller before you can ride.")
+
+# this was nested If , but we can also use elif for checking 2 conditions at once. So if/else with elif can check on
+# three conditions at once
+
+# Main condition height >= 120 cm
+# extra conditions
+# under 12 pay $5
+# 12-18 pay $7
+# over 18 $12
+
+print("welcome to the rollercoaster!")
+height = int(input("what is your height in cm?"))
+if height >= 120 :
+    print("You can ride the rollercoaster")
+    age = int(input("what is your age?"))
+    if age >= 12:
+        print("pay $5")
+    elif age >= 18:
+        print("pay $7")
+    else:
+        print("pay dollar $12")
+else:
+    print("sorry you have to grow taller")
+
+#you can check all your conditions indefinitely with elif until they require
+
+#example is here
+
+print("welcome to the rollercoaster!")
+height = int(input("what is your height in cm?"))
+if height >= 120:
+    print("You can ride the rollercoaster")
+    age = int(input("what is your age?"))
+    if age >= 12:
+        print("pay $5")
+    elif age >= 18:
+        print("pay $7")
+    elif age >= 22:
+        print("pay $4")
+    elif age >= 27:
+        print("pay $6")
+    elif age >= 30:
+        print("pay $88")
+    else:
+        print("pay dollar $12")
+else:
+    print("sorry you have to grow taller")
+
+Porject 4-   Multiple ifs
+
+#playing with two variables
+
+maths_score = int(input("what is your maths score?"))
+english_score = int(input("what is your english score?"))
+
+if maths_score >= 90:
+    if english_score >= 90:
+        print("You're good at everything")
+    else:
+        print("You're good at maths")
+else:
+    print("You're good at english")
+
+##############################################################
+
+maths_score = int(input("what is your maths score?"))
+english_score = int(input("what is your english score?"))
+if maths_score >= 90:
+    if english_score >= 90:
+        print("You're good at everything")
+    else:
+        print("You're good at maths")
+if english_score >= 90:
+    print("You're good at english")
+
+################################################################
+
+print("Welcome to the rollercoaster!")
+height = int(input("What is your height in cm? "))
+age = int(input("what is your age?"))
+if height >= 120:
+    if age >= 18:
+       print("You can ride the rollercoaster")
+    else:
+       print("You are small to ride the rollercoaster")
+else:
+    print("Sorry you have to grow taller before you can ride.")
+
+#Frame your logic in if/else considering which statement has to be true and which statement has to be false
+
+# now playing with three variables
+# age <= 18 $7
+# age > 18 $12
+# Main condition height >= 120 cm
+print("welcome to the rollercoaster!")
+height = int(input("what is your height in cm?"))
+age = int(input("what is your age?"))
+if height >= 120:
+    print("You can ride the rollercoaster")
+    age = int(input("what is your age?"))
+    if age <= 18:
+        print("Please pay $7.")
+    else:
+        print("Please pay $12.")
+else:
+    print("Sorry you have to grow taller before you can ride.")
+
+# this was nested If , but we can also use elif for checking 2 conditions at once. So if/else with elif can check on
+# three conditions at once
+
+# Main condition height >= 120 cm
+# extra conditions
+# under 12 pay $5
+# 12-18 pay $7
+# over 18 $12
+
+print("welcome to the rollercoaster!")
+height = int(input("what is your height in cm?"))
+if height >= 120 :
+    print("You can ride the rollercoaster")
+    age = int(input("what is your age?"))
+    if age >= 12:
+        print("pay $5")
+    elif age >= 18:
+        print("pay $7")
+    else:
+        print("pay dollar $12")
+else:
+    print("sorry you have to grow taller")
+
+#you can check all your conditions indefinitely with elif until they require
+
+#example is here
+
+print("welcome to the rollercoaster!")
+height = int(input("what is your height in cm?"))
+if height >= 120:
+    print("You can ride the rollercoaster")
+    age = int(input("what is your age?"))
+    if age >= 12:
+        print("pay $5")
+    elif age >= 18:
+        print("pay $7")
+    elif age >= 22:
+        print("pay $4")
+    elif age >= 27:
+        print("pay $6")
+    elif age >= 30:
+        print("pay $88")
+    else:
+        print("pay dollar $12")
+else:
+    print("sorry you have to grow taller")
+
+Code Solution- 
+#Multiple ifs to check many conditions (if all conditions all hold true all option A,B,C will executed)
+print("Welcome to the rollercoaster!")
+height = int(input("What is your height in cm? "))
+
+if height >= 120:
+    print("You can ride the rollercoaster")
+    age = int(input("What is your age? "))
+    if age <= 12:
+        bill = 5
+        print("Child tickets are $5.")
+    elif age <= 18:
+        bill = 7
+        print("Youth tickets are $7.")
+    else:
+        bill = 12
+        print("Adult tickets are $12.")
+
+    wants_photo = input("do you want to have a photo take? Type y for Yes and n for No.")
+    if wants_photo == "y" :
+        #Add $3 to their bill
+        bill += 3
+    print(f"Your final bill is {bill}")
+else:
+    print("Sorry you have to grow taller before you can ride.")
+
+Project 5 - Python pizza
+#Multiple ifs to check many conditions (if all conditions all hold true all option A,B,C will executed)
+print("Welcome to the rollercoaster!")
+height = int(input("What is your height in cm? "))
+
+if height >= 120:
+    print("You can ride the rollercoaster")
+    age = int(input("What is your age? "))
+    if age <= 12:
+        bill = 5
+        print("Child tickets are $5.")
+    elif age <= 18:
+        bill = 7
+        print("Youth tickets are $7.")
+    else:
+        bill = 12
+        print("Adult tickets are $12.")
+
+    wants_photo = input("do you want to have a photo take? Type y for Yes and n for No.")
+    if wants_photo == "y" :
+        #Add $3 to their bill
+        bill += 3
+    print(f"Your final bill is {bill}")
+else:
+    print("Sorry you have to grow taller before you can ride.")
+
+Code Solution- 
+
+print("Welcome to Python Pizza Deliveries!")
+size = input("What size pizza do you want? S, M or L: ")
+pepperoni = input("Do you want pepperoni on your pizza? Y or N: ")
+extra_cheese = input("Do you want extra cheese? Y or N: ")
+
+# to do work for size of pizza choices and bill payments
+# one condition and uski varieties toh elif laga diya
+# multiple conditions hoti toh multiple ifs aata hai aur basically tab when you are not permutation and combination
+# your multiple conditions
+Bill = 0
+if size == "S":
+    Bill += 15
+
+elif size == "M":
+    Bill += 20
+
+elif size == "L":
+    Bill += 25
+
+else:
+    print("You have typed the wrong input.")
+
+# to do work for size extra pepperoni topping
+# nested ifs hai yeh
+if pepperoni == "Y":
+    if size == "S":
+        Bill += 2
+
+    else:
+        Bill += 3
+
+# to do work for extra cheese topping
+if extra_cheese == "Y":
+    Bill += 1
+# NO NEED to put else here. If par hee over hojayega logic
+#else:
+    #Bill += 0
+
+print(f"Your final bill is: ${Bill}.")
+
+
+Project 6 - LogicaL Operators
+You can combine different conditions using logical operators.
+
+A and B #Both conditions need to be true
+C or D #Only one condition needs to be true
+not E #The condition must be false
+
+Update the code so that people age 45 to 55 (inclusive of both ages) ride for free. Use logical operators to check that the age is greater than 45, and it's also less than 55.
+
+NOTE: The warning for simplification is just a suggestion. You can consider it and chose it, or you can ignore it. In this lesson I wanted to show you the and, or and not logical operators. So I recommend keeping the original code in case you come back to this lesson for review.
+
+
+Code Solution-
+
+print("Welcome to the rollercoaster!")
+height = int(input("What is your height in cm? "))
+bill = 0
+
+if height >= 120:
+    print("You can ride the rollercoaster!")
+    age = int(input("What is your age? "))
+    if age < 12:
+        bill = 5
+        print("Child tickets are $5.")
+    elif age <= 18:
+        bill = 7
+        print("Youth tickets are $7.")
+    elif age >= 45 and  age <= 55:
+        print("Everything is going to be OK. Have a free ride with us!")
+    else:
+        bill = 12
+        print("Adult tickets are $12.")
+
+
+    wants_photo = input("Do you want a photo taken? Y or N. ")
+    if wants_photo == "Y":
+        bill += 3
+
+    print(f"Your final bill is ${bill}")
+
+else:
+    print("Sorry, you have to grow taller before you can ride.")
+
+Project 7 - Treasure Island Project
+Your goal today is to build a "Chose your own adventure game". Using what you have learnt in the lessons today you will be building a very simple version of this type of text game.
+
+Use the flow chart linked here to create the game logic.
+
+Once you've completed the project, you can always extend the game and make it more interesting!
+
+Code solution-
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\ ` . "-._ /_______________|_______
+|                   | |o ;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.")
+choice1 = input('You\'re at a crossroad, where do you want to go ? Type "left" or "right".\n').lower()
+#this is for lowercase letters input
+
+# choice1 = input('You\'re at a crossroad, where do you want to go ? Type "left" or "right".')
+# if choice1 == "left" or choice1 == "Left" :
+#     # continue in game
+# else:
+#     print("You fell in to a hole. Game Over.")
+
+#could have written it like this too if not used .lower() in variable choice1. This would also work.
+
+###########################################################################################################
+
+#if choice1 == "right":
+    #print ("you fell in a hole. Game Over.")
+#else:
+#now to think that user can right gibberish also and then the game will still continue so its better to give the game
+# logic with this below code instead
+
+if choice1 == "left":
+    # continue in game
+    # choice2 has to be indented inside the choice1 because only after that we have allowed the player to continue.
+    # here this indentation matters for choice2 variable defining
+
+    choice2 = input('You\'ve come to a lake. There is an island in the middle of the lake. '
+                    'Type "wait" to wait for a boat. Type "swim" to swim across\n').lower()
+    if choice2 == "wait":
+        # the game will continue
+        choice3 = input("You arrive at the island unharmed."
+                        "There is house with 3 doors. One red,"
+                        "one yellow and one blue."
+                        "which colour do you choose?\n").lower()
+        if choice3 == "red":
+            print("It's a room full of fire. Game Over.")
+        elif choice3 == "yellow":
+            print("You found teh treasure. You win.")
+        elif choice3 == "blue":
+            print("You enter a room full of beasts. Game Over.")
+        else:
+            print("You chose a door that doesn't exist. Game Over.")
+    else:
+        print("You got attacked by an angry trout.Game Over.")
+else:
+    print("You fell in to a hole. Game Over.")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
